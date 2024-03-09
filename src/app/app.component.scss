@@ -1,0 +1,114 @@
+main {
+  width: 100%;
+  height: 100%;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+}
+a {
+  text-decoration: none;
+  color: #269e6d;
+  font-family: "Inter", sans-serif;
+  font-size: 16px;
+  font-weight: 500;
+  line-height: 24px;
+  letter-spacing: 0em;
+  text-align: center;
+}
+button {
+  width: 100%;
+  max-width: 376px;
+  height: 100%;
+  max-height: 48px;
+  padding: 12px 0px 12px 0px;
+  border-radius: 6px;
+  border: none;
+  gap: 10px;
+  background-color: #269e6d;
+  box-shadow: 0px 2px 0px 0px #ffffff66 inset;
+  box-shadow: 0px 2px 0px 0px #ffffff;
+  box-shadow: 0px 0px 0px 8px #ffffff0d;
+  margin-bottom: 48px;
+}
+form {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  width: 100%;
+  max-width: 376px;
+  gap: 24px;
+  margin-bottom: 46px;
+  & > div {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    width: 100%;
+  }
+}
+
+.loginForm {
+  display: flex;
+  width: 100%;
+  max-width: 456px;
+  height: 100%;
+  max-height: 497px;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  background-color: #262626cc;
+  border: 1px solid #73737380;
+  padding: 32px 40px 32px 40px;
+  border-radius: 12px;
+}
+
+input[type="email"],
+input[type="password"] {
+  padding: 12px 16px 12px 16px;
+  border-radius: 3px;
+  border: 1px;
+  gap: 8px;
+  background-color: #262626;
+  border: 1px solid #414141;
+}
+
+.inputLabel {
+  font-weight: 500;
+  font-size: 16px;
+  line-height: 24px;
+  color: #ffffff;
+}
+
+.emailGroup {
+  gap: 6px;
+}
+.passwordGroup {
+  gap: 6px;
+}
+.passwordGroup > div {
+  margin-top: 6px !important;
+  display: flex;
+  align-items: center;
+  gap: 8px;
+  & > input[type="checkbox"] {
+    all: unset;
+    width: 16px;
+    height: 16px;
+    border-radius: 3px;
+    background-color: #262626cc;
+    border: 1px solid #73737380;
+    display: inline-block;
+    &:checked {
+      background-color: #73737380;
+    }
+  }
+  & > label {
+    font-family: Inter;
+    font-size: 12px;
+    font-weight: 400;
+    line-height: 24px;
+    letter-spacing: 0em;
+    text-align: left;
+    color: #ffffff;
+  }
+}
