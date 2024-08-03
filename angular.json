@@ -65,10 +65,10 @@
           "builder": "@angular-devkit/build-angular:dev-server",
           "configurations": {
             "production": {
-              "browserTarget": "logmine:build:production"
+              "buildTarget": "logmine:build:production"
             },
             "development": {
-              "browserTarget": "logmine:build:development"
+              "buildTarget": "logmine:build:development"
             }
           },
           "defaultConfiguration": "development"
@@ -76,7 +76,7 @@
         "extract-i18n": {
           "builder": "@angular-devkit/build-angular:extract-i18n",
           "options": {
-            "browserTarget": "logmine:build"
+            "buildTarget": "logmine:build"
           }
         },
         "test": {
